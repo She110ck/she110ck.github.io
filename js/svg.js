@@ -47,7 +47,7 @@ var wow = new WOW(
     boxClass:     'wow',     
     animateClass: 'animated', 
 
-    callback:     function(box) {
+    callback:function(box) {
 
       if(box.getAttribute('data-id')=='front'){
         run(84/100,'.html');
