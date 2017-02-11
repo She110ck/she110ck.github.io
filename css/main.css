@@ -1,0 +1,84 @@
+
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; /* works with row or column */
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+section {
+    min-height: 100% ;
+    width: 100%;
+    overflow: hidden;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#preloader {
+position: fixed;
+left: 0;
+top: 0;
+z-index: 999;
+width: 100%;
+height: 100%;
+overflow: visible;
+background-size: 100px 100px;
+background: hsl(0, 0%, 96%) url('../img/preloader.svg') no-repeat center center;
+}
+.no-js #preloader {
+display: none;
+}
+
+.nav { 
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+
+/* ******** */
+
+.circle-svg {
+  width: 200px;
+  height: 200px;
+}
+
+.is-work-wrap {
+  padding: 10px;
+}
+
+.for-back{
+  width: 312px;
+  margin: 10px auto;
+  border: 2px solid hsl(0, 0%, 96%);
+}
+
+.for-back:hover{
+  transition: 0.4s;
+  border: 2px solid #33e1ed;
+
+}
+
+.is-work{
+  transition:0.4s;
+  width: 300px ;
+  padding: 12px;
+  opacity: 1;
+
+}
+
+.is-work:hover{
+  transition:0.4s;
+  opacity: 0.5;
+}
+
